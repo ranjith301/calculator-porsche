@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('haha.jpg') no-repeat center center fixed;
+    background-size: cover; /* Adjusts the image to cover the screen */
+  }
+  
+  .calculator {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the calculator */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #display {
+    width: 100%;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #ddd;
+  }
+  
+  .button:active {
+    background-color: #ccc;
+  }
+  
